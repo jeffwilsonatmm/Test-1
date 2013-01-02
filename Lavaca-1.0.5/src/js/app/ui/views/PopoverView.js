@@ -21,7 +21,7 @@ ns.PopoverView = BaseView.extend({
    * @default 'pop'
    * The name of the animation used by the view
    */
-  animation: 'pop',
+  animation: '',
   /**
    * @field {String} overlayAnimation
    * @default 'fade'
