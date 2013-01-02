@@ -11,3 +11,27 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/jeffw
 
 !ENTRY org.eclipse.mylyn.tasks.ui 2 0 2012-12-28 12:17:04.212
 !MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2013-01-02 14:35:41.026 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_37
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/jeffwilson/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/jeffwilson/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-01-02 14:36:31.762
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2013-01-02 14:36:32.646
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-01-02 14:41:36.979
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-01-02 14:41:36.979
+!MESSAGE Conflict for 'org.eclipse.wst.jsdt.ui.edit.text.java.open.editor':
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@4c7ab5c0),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@2ed4e99c,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@5735b14d)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@441698b9)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@4c7ab5c0),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@2ed4e99c,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@5735b14d)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@441698b9)),sourcePriority=1064961)
