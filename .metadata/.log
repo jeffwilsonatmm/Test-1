@@ -35,3 +35,85 @@ HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
 HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
 	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@4c7ab5c0),
 	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@2ed4e99c,ActivePartExpression(org.eclipse.ui.navigator.resources.ProjectExplorer@5735b14d)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@441698b9)),sourcePriority=1064961)
+!SESSION 2013-01-03 08:31:34.181 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_37
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/jeffwilson/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -data /Users/jeffwilson/Development/githubformac/Lavaca/Test1/ -keyring /Users/jeffwilson/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-01-03 08:31:37.646
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2013-01-03 08:31:49.010
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2013-01-03 08:31:50.152
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.jface.text 4 0 2013-01-03 08:47:21.007
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:671)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:676)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:387)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:443)
+	at org.eclipse.wst.jsdt.internal.core.CompilationUnitProblemFinder.accept(CompilationUnitProblemFinder.java:174)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:279)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:132)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.getType(LookupEnvironment.java:766)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.getResolvedType(LookupEnvironment.java:720)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getJavaLangString(Scope.java:1745)
+	at org.eclipse.wst.jsdt.core.dom.DefaultBindingResolver.resolveExpressionType(DefaultBindingResolver.java:604)
+	at org.eclipse.wst.jsdt.core.dom.Expression.resolveTypeBinding(Expression.java:111)
+	at org.eclipse.wst.jsdt.internal.corext.refactoring.nls.NLSHintHelper.getAccessorClassReference(NLSHintHelper.java:97)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.NLSStringHover.getHoverInfo(NLSStringHover.java:96)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo(BestMatchHover.java:99)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo(JavaEditorTextHoverProxy.java:67)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+
+!ENTRY org.eclipse.jface.text 4 0 2013-01-03 08:53:28.605
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:671)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:676)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:387)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:443)
+	at org.eclipse.wst.jsdt.internal.core.CompilationUnitProblemFinder.accept(CompilationUnitProblemFinder.java:174)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:279)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:132)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.getType(LookupEnvironment.java:766)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.getResolvedType(LookupEnvironment.java:720)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getJavaLangString(Scope.java:1745)
+	at org.eclipse.wst.jsdt.core.dom.DefaultBindingResolver.resolveExpressionType(DefaultBindingResolver.java:604)
+	at org.eclipse.wst.jsdt.core.dom.Expression.resolveTypeBinding(Expression.java:111)
+	at org.eclipse.wst.jsdt.internal.corext.refactoring.nls.NLSHintHelper.getAccessorClassReference(NLSHintHelper.java:97)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.NLSStringHover.getHoverInfo(NLSStringHover.java:96)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo(BestMatchHover.java:99)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo(JavaEditorTextHoverProxy.java:67)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+
+!ENTRY org.eclipse.jface.text 4 0 2013-01-03 09:02:46.207
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:671)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.CompilationUnitScope.connectTypeHierarchy(CompilationUnitScope.java:676)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:387)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.completeTypeBindings(LookupEnvironment.java:443)
+	at org.eclipse.wst.jsdt.internal.core.CompilationUnitProblemFinder.accept(CompilationUnitProblemFinder.java:174)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForBinding(LookupEnvironment.java:279)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.askForType(LookupEnvironment.java:132)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.getType(LookupEnvironment.java:766)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.LookupEnvironment.getResolvedType(LookupEnvironment.java:720)
+	at org.eclipse.wst.jsdt.internal.compiler.lookup.Scope.getJavaLangString(Scope.java:1745)
+	at org.eclipse.wst.jsdt.core.dom.DefaultBindingResolver.resolveExpressionType(DefaultBindingResolver.java:604)
+	at org.eclipse.wst.jsdt.core.dom.Expression.resolveTypeBinding(Expression.java:111)
+	at org.eclipse.wst.jsdt.internal.corext.refactoring.nls.NLSHintHelper.getAccessorClassReference(NLSHintHelper.java:97)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.NLSStringHover.getHoverInfo(NLSStringHover.java:96)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo(BestMatchHover.java:99)
+	at org.eclipse.wst.jsdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo(JavaEditorTextHoverProxy.java:67)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)

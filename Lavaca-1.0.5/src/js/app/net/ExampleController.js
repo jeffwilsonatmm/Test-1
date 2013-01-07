@@ -15,7 +15,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  * @super Lavaca.mvc.Controller
  * Example controller
  */
-ns.ExampleController = Controller.extend({
+ns.ExampleController = Controller.extend(function(){
+	Controller.apply(this, arguments);
+	this.prefix = 'Mr';
+},{
   /**
    * @method home
    * Home action, creates a history state and shows a view
@@ -31,6 +34,16 @@ ns.ExampleController = Controller.extend({
     return this
       .view('home', app.ui.views.ExampleView, model)
       .then(this.history(model, 'Home Page', params.url));
+  },
+  helloName: function(params, model) {
+	    var exampleModel = app.models.get('exampleModel');
+	    
+	    exampleModel.set('name', params.name);
+	    exampleModel.set('prefix', this.prefix);
+	    
+	    return this
+	      .view(null, app.ui.views.helloNameView, exampleModel)
+	      .then(this.history(model, 'Hello ' + params.name, params.url));
   },
   /**
    * @method lang

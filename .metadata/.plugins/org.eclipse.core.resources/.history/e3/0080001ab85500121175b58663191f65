@@ -1,0 +1,4 @@
+<h1>{prefix} {name}</h1>
+<p>
+  {@msg key="choose_language"/} <a href="/lang?locale=en_US">English is the best!</a>, <a href="/lang?locale=es_MX">Español</a>
+</p>

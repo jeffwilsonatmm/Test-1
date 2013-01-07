@@ -7,6 +7,7 @@
 		<file>/js/app/ui/views/PopoverView.js</file>
 		<file>/js/app/ui/views/ScrollableView.js</file>
 		<file>/js/app/ui/views/ExampleView.js</file>
+		<file>/js/app/ui/views/helloNameView.js</file>
 	</package>
 	<package name="Lavaca-1.0.5.min">
 		<file>/js/libs/zepto-1.0rc1.js</file>

@@ -1,6 +1,6 @@
 {
   "src": "src",
-  "dst": "www-staging",
+  "dst": "www-stage",
   "compress_html": true,
   "compress_js": true,
   "compress_css": true,

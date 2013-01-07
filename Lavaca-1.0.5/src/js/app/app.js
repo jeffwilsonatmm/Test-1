@@ -10,12 +10,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 */
 (function(Lavaca, $) {
 
-/*
+
 // Uncomment this section to use hash-based browser history instead of HTML5 history.
 // You should use hash-based history if there's no server-side component supporting your app's routes.
 
 Lavaca.net.History.overrideStandardsMode();
-*/
+
 
 /**
  * @class app
@@ -27,10 +27,13 @@ window.app = new Lavaca.mvc.Application(function() {
   Lavaca.net.Connectivity.registerOfflineAjaxHandler(app.onOfflineAjax);
   // Initialize the models cache
   app.models.init();
+  app.models.set('exampleModel', new Lavaca.mvc.Model());
+  
   // Initialize the routes
   app.router.add({
     '/': [app.net.ExampleController, 'home'],
-    '/lang': [app.net.ExampleController, 'lang']
+    '/lang': [app.net.ExampleController, 'lang'],
+    '/hello/{name}': [app.net.ExampleController, 'helloName']
   });
   // Initialize the loading indicator
   app.loadingIndicator = Lavaca.ui.LoadingIndicator.init();
